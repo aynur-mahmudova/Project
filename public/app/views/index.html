@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <base href='/'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel='icon' type='image/x-icon' href='assets/images/favicon.png' />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/angular-route.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+
+    <title>Snews.bg</title>
+
+
+
+</head>
+
+<body ng-app="userApp">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+        </button>
+                <!--<a class="navbar-brand" href="/">SNEWS.BG</a>-->
+                <img id='logo-img' src="assets/images/logo.png" alt="logo">
+            </div>
+
+            <form id="signin" class="navbar-form navbar-right" role="form">
+                <div class="input-group">
+                    <span class="input-group-addon">
+              <i class="glyphicon glyphicon-user"></i>
+            </span>
+                    <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-addon">
+              <i class="glyphicon glyphicon-lock"></i>
+            </span>
+                    <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+                </div>
+
+                <button id="loginButton" type="submit" class="btn btn-primary">Login</button>
+                <button id="register" type="submit" class="btn btn-primary">Register</button>
+            </form>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/a" class="page">Link A</a>
+                    </li>
+                    <li>
+                        <a href="/b" class="page">Link B</a>
+                    </li>
+                    <li>
+                        <a href="/c" class="page">Link C</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="list-group ">
+                    <a href="/football" class="list-group-item category ">Football</a>
+                    <a href="/volleyball" class="list-group-item category ">Volleyball</a>
+                    <a href="/NBA" class="list-group-item category ">NBA</a>
+                    <a href="/tennis" class="list-group-item category ">Tennis</a>
+                    <a href="/F1" class="list-group-item category ">F1</a>
+                    <a href="/MMA" class="list-group-item category ">MMA</a>
+                    <a href="/winter-sports" class="list-group-item category ">Winter Sports</a>
+
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <div ng-view class="jumbotron">
+                    <!--<h1>Sport.bg</h1>
+                    <p>Спортният портал на България.</p>-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!--<script src="loginService.js"></script>
+    <script src="loginController.js"></script>-->
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>

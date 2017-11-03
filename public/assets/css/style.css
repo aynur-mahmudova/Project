@@ -1,0 +1,9 @@
+a.list-group-item:hover {
+    text-decoration: none;
+    color: #7adf28;
+    background-color: #101010;
+}
+
+#logo-img {
+    padding: 0.2em 0.5em 0.2em 0.2em;
+}
